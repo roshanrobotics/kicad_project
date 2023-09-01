@@ -1,0 +1,13 @@
+Reference, Value, Footprint, Datasheet
+"C1","0.1uf","Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm","~"
+"C2","1uf","Capacitor_THT:CP_Radial_D5.0mm_P2.50mm","~"
+"R2","440k","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
+"R1","1k","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
+"D1","Red_LED","LED_THT:LED_D5.0mm","~"
+"BZ1","Buzzer","Buzzer_Beeper:Buzzer_12x9.5RM7.6","~"
+"D2","Green_LED","LED_THT:LED_D5.0mm","~"
+"R3","1k","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
+"Q1","BC557","Package_TO_SOT_THT:TO-92_Wide","https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+"J2","break_wire","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal","~"
+"J1","power_Supply","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal","~"
+"U1","NE555P","Package_DIP:DIP-8_W7.62mm","http://www.ti.com/lit/ds/symlink/ne555.pdf"

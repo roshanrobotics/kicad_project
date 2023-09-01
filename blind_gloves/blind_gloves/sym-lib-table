@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "blind_gloves-rescue")(type "Legacy")(uri "${KIPRJMOD}/blind_gloves-rescue.lib")(options "")(descr ""))
+)

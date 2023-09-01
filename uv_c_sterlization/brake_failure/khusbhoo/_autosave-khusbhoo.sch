@@ -1,0 +1,286 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 61A147E0
+P 2500 4000
+F 0 "C1" H 2615 4046 50  0000 L CNN
+F 1 "0.1UF" H 2615 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2538 3850 50  0001 C CNN
+F 3 "~" H 2500 4000 50  0001 C CNN
+	1    2500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C2
+U 1 1 61A151E4
+P 2750 4000
+F 0 "C2" H 2838 4046 50  0000 L CNN
+F 1 "1UF" H 2838 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm" H 2750 4000 50  0001 C CNN
+F 3 "~" H 2750 4000 50  0001 C CNN
+	1    2750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 61A16441
+P 4500 3600
+F 0 "R2" H 4559 3646 50  0000 L CNN
+F 1 "440K" H 4559 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" H 4500 3600 50  0001 C CNN
+F 3 "~" H 4500 3600 50  0001 C CNN
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61A16DD0
+P 4500 3050
+F 0 "R1" H 4559 3096 50  0000 L CNN
+F 1 "1K" H 4559 3005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" H 4500 3050 50  0001 C CNN
+F 3 "~" H 4500 3050 50  0001 C CNN
+	1    4500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61A170EA
+P 5050 4050
+F 0 "R3" H 5109 4096 50  0000 L CNN
+F 1 "1K" H 5109 4005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" H 5050 4050 50  0001 C CNN
+F 3 "~" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 61A17708
+P 5000 3300
+F 0 "D1" H 4993 3045 50  0000 C CNN
+F 1 "LED" H 4993 3136 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5000 3300 50  0001 C CNN
+F 3 "~" H 5000 3300 50  0001 C CNN
+	1    5000 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 61A185DD
+P 5050 3750
+F 0 "D2" V 5089 3632 50  0000 R CNN
+F 1 "LED" V 4998 3632 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 5050 3750 50  0001 C CNN
+F 3 "~" H 5050 3750 50  0001 C CNN
+	1    5050 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 61A19036
+P 5000 3050
+F 0 "BZ1" V 5051 2863 50  0000 R CNN
+F 1 "Buzzer" V 4960 2863 50  0000 R CNN
+F 2 "Buzzer_Beeper:Buzzer_D14mm_H7mm_P10mm" V 4975 3150 50  0001 C CNN
+F 3 "~" V 4975 3150 50  0001 C CNN
+	1    5000 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61A1C52B
+P 2150 3450
+F 0 "J1" H 2068 3125 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2068 3216 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2150 3450 50  0001 C CNN
+F 3 "~" H 2150 3450 50  0001 C CNN
+	1    2150 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 3350 2350 2800
+Wire Wire Line
+	2350 2800 2850 2800
+Wire Wire Line
+	3700 2800 3700 3100
+Wire Wire Line
+	3200 3700 2850 3700
+Wire Wire Line
+	2850 3700 2850 2800
+Connection ~ 2850 2800
+Wire Wire Line
+	2850 2800 3700 2800
+$Comp
+L power:GND #PWR01
+U 1 1 61A1D41C
+P 2600 4300
+F 0 "#PWR01" H 2600 4050 50  0001 C CNN
+F 1 "GND" H 2605 4127 50  0000 C CNN
+F 2 "" H 2600 4300 50  0001 C CNN
+F 3 "" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 4250
+Wire Wire Line
+	2600 4250 2600 4300
+Wire Wire Line
+	3200 3300 2750 3300
+Wire Wire Line
+	3700 3900 3700 4250
+Wire Wire Line
+	2600 4250 2750 4250
+Wire Wire Line
+	2750 4100 2750 4250
+Connection ~ 2750 4250
+Wire Wire Line
+	2750 4250 3700 4250
+Wire Wire Line
+	2500 3850 2500 3500
+Wire Wire Line
+	2500 3500 3200 3500
+Wire Wire Line
+	2600 4250 2500 4250
+Wire Wire Line
+	2500 4250 2500 4150
+Wire Wire Line
+	4200 3700 4500 3700
+Wire Wire Line
+	4500 3500 4500 3150
+Wire Wire Line
+	4200 3500 4500 3500
+Connection ~ 4500 3500
+Wire Wire Line
+	4200 3300 4700 3300
+Wire Wire Line
+	4900 3150 4700 3150
+Wire Wire Line
+	4700 3150 4700 3300
+Connection ~ 4700 3300
+Wire Wire Line
+	4700 3300 4850 3300
+Wire Wire Line
+	5100 3150 5400 3150
+Wire Wire Line
+	5400 3150 5400 3300
+Wire Wire Line
+	5400 3300 5150 3300
+Connection ~ 5400 3300
+Wire Wire Line
+	5050 3900 5050 3950
+Wire Wire Line
+	5050 4150 5050 4250
+Wire Wire Line
+	5050 4250 3700 4250
+Connection ~ 3700 4250
+Connection ~ 5050 4250
+$Comp
+L Device:R_Small R4
+U 1 1 61A25E83
+P 5600 3600
+F 0 "R4" V 5404 3600 50  0000 C CNN
+F 1 "100R" V 5495 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" H 5600 3600 50  0001 C CNN
+F 3 "~" H 5600 3600 50  0001 C CNN
+	1    5600 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3600 5750 3600
+$Comp
+L Transistor_BJT:BC557 Q1
+U 1 1 61A22068
+P 5950 3600
+F 0 "Q1" H 6141 3646 50  0000 L CNN
+F 1 "BC557" H 6141 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Wide" H 6150 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 5950 3600 50  0001 L CNN
+	1    5950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3400 6050 3300
+Wire Wire Line
+	5400 3300 6050 3300
+Wire Wire Line
+	5050 3600 5350 3600
+Wire Wire Line
+	6050 3800 6050 4250
+Wire Wire Line
+	5050 4250 6050 4250
+Wire Wire Line
+	2350 3450 2350 4250
+Wire Wire Line
+	2350 4250 2500 4250
+Connection ~ 2500 4250
+Wire Wire Line
+	3700 2800 4500 2800
+Wire Wire Line
+	4500 2800 4500 2950
+Connection ~ 3700 2800
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 61A2945E
+P 5550 2600
+F 0 "J2" V 5514 2412 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 5423 2412 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 5550 2600 50  0001 C CNN
+F 3 "~" H 5550 2600 50  0001 C CNN
+	1    5550 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 2800 5750 2800
+Wire Wire Line
+	5750 2800 5750 3400
+Wire Wire Line
+	5750 3400 5350 3400
+Wire Wire Line
+	5350 3400 5350 3600
+Connection ~ 5350 3600
+Wire Wire Line
+	5350 3600 5500 3600
+Wire Wire Line
+	4500 2800 5550 2800
+Connection ~ 4500 2800
+Wire Wire Line
+	2750 3300 2750 3800
+Connection ~ 4200 3700
+$Comp
+L Timer:NE555P U1
+U 1 1 61A2F806
+P 3700 3500
+F 0 "U1" H 3700 4081 50  0000 C CNN
+F 1 "NE555P" H 3700 3990 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4350 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4550 3100 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4000 3100 4000
+Wire Wire Line
+	3100 4000 3100 3800
+Wire Wire Line
+	3100 3800 2750 3800
+Wire Wire Line
+	4200 3700 4200 4000
+Connection ~ 2750 3800
+Wire Wire Line
+	2750 3800 2750 3900
+$EndSCHEMATC
